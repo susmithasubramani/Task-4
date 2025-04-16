@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class SwapWithTemp {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get input from user
+        System.out.print("Enter first number (a): ");
+        int a = scanner.nextInt();
+
+        System.out.print("Enter second number (b): ");
+        int b = scanner.nextInt();
+
+        System.out.println("\nBefore Swapping:");
+        System.out.println("a = " + a + ", b = " + b);
+
+        // Swapping logic using a temporary variable
+        int temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("\nAfter Swapping:");
+        System.out.println("a = " + a + ", b = " + b);
+
+        scanner.close();
+    }
+}
