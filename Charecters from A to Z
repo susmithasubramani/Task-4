@@ -1,0 +1,17 @@
+public class AlphabetPrinter {
+    public static void main(String[] args) {
+        System.out.println("Lowercase letters from a to z:");
+        for (char ch = 'a'; ch <= 'z'; ch++) {
+            System.out.print(ch + " ");
+        }
+
+        System.out.println(); // Line break
+
+        System.out.println("Uppercase letters from A to Z:");
+        for (char ch = 'A'; ch <= 'Z'; ch++) {
+            System.out.print(ch + " ");
+        }
+
+        System.out.println(); // Line break
+    }
+}
