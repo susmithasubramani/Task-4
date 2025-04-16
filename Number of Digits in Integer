@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class DigitCounter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get input from user
+        System.out.print("Enter an integer: ");
+        int number = scanner.nextInt();
+
+        int count = 0;
+        int temp = Math.abs(number); // Make sure it works for negative numbers too
+
+        // Special case for 0
+        if (temp == 0) {
+            count = 1;
+        } else {
+            while (temp > 0) {
+                temp /= 10;
+                count++;
+            }
+        }
+
+        System.out.println("Number of digits in " + number + " is: " + count);
+
+        scanner.close();
+    }
+}
