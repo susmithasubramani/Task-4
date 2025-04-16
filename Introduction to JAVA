@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class SumComparison {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get values from user
+        System.out.print("Enter value for a: ");
+        int a = scanner.nextInt();
+
+        System.out.print("Enter value for b: ");
+        int b = scanner.nextInt();
+
+        System.out.print("Enter value for c: ");
+        int c = scanner.nextInt();
+
+        System.out.print("Enter value for d: ");
+        int d = scanner.nextInt();
+
+        // Calculate sums
+        int sumAB = a + b;
+        int sumCD = c + d;
+
+        // Compare the sums
+        if (sumAB > sumCD) {
+            System.out.println("Sum of a and b (" + sumAB + ") is greater than sum of c and d (" + sumCD + ").");
+        } else if (sumAB < sumCD) {
+            System.out.println("Sum of a and b (" + sumAB + ") is less than sum of c and d (" + sumCD + ").");
+        } else {
+            System.out.println("Sum of a and b is equal to sum of c and d (" + sumAB + ").");
+        }
+
+        scanner.close();
+    }
+}
